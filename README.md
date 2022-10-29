@@ -21,7 +21,7 @@ Write SQL queries that return the following information:
 9. Find the accident code in which cars with an engine size of less than 2000 cc have not been involved
 10. Create a view of your choice (not among the queries above)
 
-# Before starting some advice:
+### Before starting some advice:
 
 - Try the queries, if you can not make them work in any way write those anyway, if the idea is correct is a good starting point, which will be evaluated positively;
 - The scheme of the DB to be designed is a suggestion, you can follow it, but if you have other ideas you can implement them (watch out for time though);
