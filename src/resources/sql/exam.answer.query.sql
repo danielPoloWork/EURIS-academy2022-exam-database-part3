@@ -67,7 +67,12 @@ SELECT Car.licensePlate
 FROM AccidentManagement.Car
     INNER JOIN AccidentManagement.CarInvolved ON CarInvolved.licensePlate = Car.licensePlate
     INNER JOIN AccidentManagement.Accident    ON Accident.accidentCode = CarInvolved.accidentCode
-WHERE Accident.accidentDate < '2010-10-20';
+WHERE Accident.accidentDate < '2010-10-20'
+UNION
+SELECT Car.licensePlate
+FROM AccidentManagement.Car
+	LEFT JOIN AccidentManagement.CarInvolved ON CarInvolved.licensePlate = Car.licensePlate
+WHERE Car.licensePlate IS NULL;
 
 # Query 09.
 SELECT CarInvolved.accidentCode
