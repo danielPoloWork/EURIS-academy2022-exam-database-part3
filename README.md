@@ -1,5 +1,5 @@
 # EURIS Academy 2022
-## Database Exam Part 1
+## Database Exam Part 3
 
 ### SQL
 Given the following relational scheme for accidents management:
